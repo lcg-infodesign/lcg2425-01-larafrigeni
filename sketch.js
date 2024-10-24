@@ -19,7 +19,7 @@ function draw() {
   background(227, 226, 224);
 
   while (y < height - margin) { 
-    let squareSize = random(23, 35); 
+    let squareSize = random(25, 45); 
     let col = chooseColor(x, y); 
     // Quadrati 
     stroke(col.levels[0], col.levels[1], col.levels[2], 150); 
@@ -37,10 +37,10 @@ function draw() {
     circle(dotX, dotY, 6, 6);
     pop(); 
 
-    x += squareSize + 5; // Margine extra tra quadrati
+    x += squareSize + 10; // Margine extra tra quadrati
     if (x >= width - margin) { 
        x = 100; 
-       y += random(25, 45); 
+       y += random(35, 45); 
     }
   }
 
